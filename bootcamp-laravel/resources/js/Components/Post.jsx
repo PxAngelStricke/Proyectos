@@ -86,7 +86,7 @@ function Post({ post }) {
                 : (
                     <>
                         <p className='mt-4 text-lg text-gray-800'>{post.title}</p>
-                        <p className='mt-4 text-gray-600'>{post.body}</p>
+                        {post.body}
                     </>
                 )
             }

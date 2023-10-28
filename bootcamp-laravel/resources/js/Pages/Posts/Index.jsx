@@ -5,7 +5,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout'
 import { useForm, Head } from '@inertiajs/react'
 import Post from '@/Components/Post'
 
-function Index({auth, posts}) {
+function Index({ auth, posts}) {
     const { data, setData, post, processing, reset, errors } = useForm({
         title: '',
         body: ''
@@ -38,7 +38,7 @@ function Index({auth, posts}) {
                 </PrimaryButton>
             </form>
 
-            <div className='mt-6 bg-white shadow-sm rounded-lg divide-y'>
+            <div className='mt-6 bg-indigo-400 shadow-sm rounded-lg divide-y-4'>
                 {
                     posts.map( post =>
                         <Post key={post.id} post={post}/>
